@@ -1,0 +1,9 @@
+C:\Users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave.2CI.WindowsClassicGUI\bin\Debug\de.netcrave.2CI.WindowsClassicGUI.exe.config
+C:\Users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave.2CI.WindowsClassicGUI\bin\Debug\de.netcrave.2CI.WindowsClassicGUI.exe
+C:\Users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave.2CI.WindowsClassicGUI\bin\Debug\de.netcrave.2CI.WindowsClassicGUI.pdb
+C:\Users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave.2CI.WindowsClassicGUI\obj\Debug\de.netcrave.2CI.WindowsClassicGUI.csprojResolveAssemblyReference.cache
+C:\Users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave.2CI.WindowsClassicGUI\obj\Debug\de.netcrave._2CI.WindowsClassicGUI.Form1.resources
+C:\Users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave.2CI.WindowsClassicGUI\obj\Debug\de.netcrave._2CI.WindowsClassicGUI.Properties.Resources.resources
+C:\Users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave.2CI.WindowsClassicGUI\obj\Debug\de.netcrave.2CI.WindowsClassicGUI.csproj.GenerateResource.Cache
+C:\Users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave.2CI.WindowsClassicGUI\obj\Debug\de.netcrave.2CI.WindowsClassicGUI.exe
+C:\Users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave.2CI.WindowsClassicGUI\obj\Debug\de.netcrave.2CI.WindowsClassicGUI.pdb

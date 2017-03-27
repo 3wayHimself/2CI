@@ -108,9 +108,9 @@ namespace de.netcrave._2CI.DB
                     else if(rebuild == true)
                     {
                         // create a fragment for each sub directory
-                        DBFragment fragment = null;
-                        ConcurrentQueue<string> ContentFiles = new ConcurrentQueue<string>(Directory.GetFiles(current).AsEnumerable());
-                        ConcurrentQueue<string> Skipped = new ConcurrentQueue<string>();
+                        DBFragment fragment = new DBFragment(current);
+                        ConcurrentQueue<string> ContentFiles = new ConcurrentQueue<string>(Directory.GetFiles(current));
+                        ConcurrentQueue<IAssociatedFile> Pending = new ConcurrentQueue<IAssociatedFile>();
                         foreach (var f in ContentFiles)
                         {
                             var CurrentFileType = GetFileType(f);
@@ -125,9 +125,9 @@ namespace de.netcrave._2CI.DB
                                 case AssetFileType.PNG:
                                     if(fragment == null)
                                     {
-                                        // Lets avoid creating database fragments for files that aren't necesarrily associated with any music
+                                        // Lets avoid commiting database fragments for files that aren't necesarrily associated with any music
                                         // later when (if) the fragment gets created it can revist the Skipped buffer
-                                        Skipped.Enqueue(f);
+                                        Pending.Enqueue(new AssociatedImageFile(f, CurrentFileType, fragment));
                                         continue;
                                     }
                                     // Add these files which may likely be album art or playlists to the assets for the current fragment
@@ -141,12 +141,17 @@ namespace de.netcrave._2CI.DB
                                 case AssetFileType.WAVRIFF:
                                 case AssetFileType.WAVWAVE:
                                 case AssetFileType.WMA:                                
-                                    fragment = (fragment != null) ? fragment : new DBFragment(current);
+                                    //fragment = (fragment != null) ? fragment : new DBFragment(current);
                                     fragment.AudioFiles.Add(new AudioFile(f, CurrentFileType, fragment));
+                                    foreach(var s in Pending)
+                                    {
+                                        fragment.AssociatedFiles.Add(s);
+                                    }
                                     break;
                             }
                         }
-                        if(fragment != null)
+                        // We won't index / save fragments that don't have any music associated with them
+                        if(fragment != null && fragment.AudioFiles.Count() > 0)
                         {
                             FragmentIndex.fragments.Add(fragment);
                         }

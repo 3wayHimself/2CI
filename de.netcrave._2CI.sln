@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "de.netcrave._2CI.Daemon", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "de.netcrave._2CI.DB", "de.netcrave._2CI.DB\de.netcrave._2CI.DB.csproj", "{369A5A34-9CAD-4E63-BE93-1A699F4D1181}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "de.netcrave.2CI.WindowsClassicGUI", "de.netcrave.2CI.WindowsClassicGUI\de.netcrave.2CI.WindowsClassicGUI.csproj", "{9C1F9897-C653-4412-A66B-7B8CCB5032E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{369A5A34-9CAD-4E63-BE93-1A699F4D1181}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{369A5A34-9CAD-4E63-BE93-1A699F4D1181}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{369A5A34-9CAD-4E63-BE93-1A699F4D1181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C1F9897-C653-4412-A66B-7B8CCB5032E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C1F9897-C653-4412-A66B-7B8CCB5032E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C1F9897-C653-4412-A66B-7B8CCB5032E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C1F9897-C653-4412-A66B-7B8CCB5032E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
