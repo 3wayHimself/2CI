@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\de.netcrave._2CI.Shared\de.netcrave._2CI.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

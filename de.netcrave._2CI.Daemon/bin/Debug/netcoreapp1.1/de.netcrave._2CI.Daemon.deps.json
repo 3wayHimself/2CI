@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v1.1",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v1.1": {
+      "de.netcrave._2ci.daemon/1.0.0": {
+        "dependencies": {
+          "de.netcrave._2CI.Shared": "1.0.0"
+        },
+        "runtime": {
+          "de.netcrave._2CI.Daemon.dll": {}
+        }
+      },
+      "de.netcrave._2ci.shared/1.0.0": {
+        "runtime": {
+          "de.netcrave._2CI.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "de.netcrave._2ci.daemon/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "de.netcrave._2ci.shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

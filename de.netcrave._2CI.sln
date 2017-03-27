@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "de.netcrave._2CI.CLI", "de.netcrave._2CI.CLI\de.netcrave._2CI.CLI.csproj", "{1F67087D-6986-43E7-B502-905D0B558EE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "de.netcrave._2CI.Server", "de.netcrave._2CI.Server\de.netcrave._2CI.Server.csproj", "{5FC5C144-C371-4B36-B41F-A26FE6F12A36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "de.netcrave._2CI.Shared", "de.netcrave._2CI.Shared\de.netcrave._2CI.Shared.csproj", "{DE381B98-1731-477B-84C7-55A75B858D4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "de.netcrave._2CI.ffmpegBackend", "de.netcrave._2CI.ffmpegBackend\de.netcrave._2CI.ffmpegBackend.csproj", "{1E5E07F8-BAF0-4EE6-AEC1-D67BAD5B6114}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "de.netcrave._2CI.Daemon", "de.netcrave._2CI.Daemon\de.netcrave._2CI.Daemon.csproj", "{471F3FB0-709D-4A91-B975-B182569090E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "de.netcrave._2CI.DB", "de.netcrave._2CI.DB\de.netcrave._2CI.DB.csproj", "{369A5A34-9CAD-4E63-BE93-1A699F4D1181}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F67087D-6986-43E7-B502-905D0B558EE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F67087D-6986-43E7-B502-905D0B558EE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F67087D-6986-43E7-B502-905D0B558EE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F67087D-6986-43E7-B502-905D0B558EE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FC5C144-C371-4B36-B41F-A26FE6F12A36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FC5C144-C371-4B36-B41F-A26FE6F12A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FC5C144-C371-4B36-B41F-A26FE6F12A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FC5C144-C371-4B36-B41F-A26FE6F12A36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE381B98-1731-477B-84C7-55A75B858D4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE381B98-1731-477B-84C7-55A75B858D4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE381B98-1731-477B-84C7-55A75B858D4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE381B98-1731-477B-84C7-55A75B858D4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E5E07F8-BAF0-4EE6-AEC1-D67BAD5B6114}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E5E07F8-BAF0-4EE6-AEC1-D67BAD5B6114}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E5E07F8-BAF0-4EE6-AEC1-D67BAD5B6114}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E5E07F8-BAF0-4EE6-AEC1-D67BAD5B6114}.Release|Any CPU.Build.0 = Release|Any CPU
+		{471F3FB0-709D-4A91-B975-B182569090E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{471F3FB0-709D-4A91-B975-B182569090E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{471F3FB0-709D-4A91-B975-B182569090E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{471F3FB0-709D-4A91-B975-B182569090E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{369A5A34-9CAD-4E63-BE93-1A699F4D1181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{369A5A34-9CAD-4E63-BE93-1A699F4D1181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{369A5A34-9CAD-4E63-BE93-1A699F4D1181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{369A5A34-9CAD-4E63-BE93-1A699F4D1181}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

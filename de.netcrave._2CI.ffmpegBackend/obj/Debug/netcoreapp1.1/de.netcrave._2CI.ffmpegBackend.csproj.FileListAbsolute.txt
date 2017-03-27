@@ -1,0 +1,9 @@
+c:\users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave._2CI.ffmpegBackend\bin\Debug\netcoreapp1.1\de.netcrave._2CI.ffmpegBackend.deps.json
+c:\users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave._2CI.ffmpegBackend\bin\Debug\netcoreapp1.1\de.netcrave._2CI.ffmpegBackend.dll
+c:\users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave._2CI.ffmpegBackend\bin\Debug\netcoreapp1.1\de.netcrave._2CI.ffmpegBackend.pdb
+c:\users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave._2CI.ffmpegBackend\bin\Debug\netcoreapp1.1\de.netcrave._2CI.Shared.dll
+c:\users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave._2CI.ffmpegBackend\bin\Debug\netcoreapp1.1\de.netcrave._2CI.Shared.pdb
+c:\users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave._2CI.ffmpegBackend\obj\Debug\netcoreapp1.1\de.netcrave._2CI.ffmpegBackend.csprojResolveAssemblyReference.cache
+c:\users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave._2CI.ffmpegBackend\obj\Debug\netcoreapp1.1\de.netcrave._2CI.ffmpegBackend.AssemblyInfo.cs
+c:\users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave._2CI.ffmpegBackend\obj\Debug\netcoreapp1.1\de.netcrave._2CI.ffmpegBackend.dll
+c:\users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave._2CI.ffmpegBackend\obj\Debug\netcoreapp1.1\de.netcrave._2CI.ffmpegBackend.pdb
