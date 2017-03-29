@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{65CA9556-A6B7-4F33-A475-C3CF43E41B0B}</ProjectGuid>
+    <ProjectGuid>{D7FA505B-A1AA-4468-B9D7-FB8973773469}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>de.netcrave._2CI.DB</RootNamespace>
-    <AssemblyName>de.netcrave._2CI.DB</AssemblyName>
+    <RootNamespace>de.netcrave._2CI.CSCoreBackend</RootNamespace>
+    <AssemblyName>de.netcrave._2CI.CSCoreBackend</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CSCore, Version=1.1.6245.30570, Culture=neutral, PublicKeyToken=5a08f2b6f4415dea, processorArchitecture=MSIL">
+      <HintPath>..\packages\CSCore.1.2.0\lib\net35-client\CSCore.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,7 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MusicDatabase.cs" />
+    <Compile Include="AudioDevice.cs" />
+    <Compile Include="Backend.cs" />
+    <Compile Include="MusicPlayer.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -48,6 +55,9 @@
       <Project>{634b3f17-7828-42fe-b6ce-a1dcead3c27c}</Project>
       <Name>de.netcrave._2CI.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

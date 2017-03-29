@@ -1,9 +1,0 @@
-c:\users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave._2CI.Daemon\bin\Debug\netcoreapp1.1\de.netcrave._2CI.Daemon.deps.json
-c:\users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave._2CI.Daemon\bin\Debug\netcoreapp1.1\de.netcrave._2CI.Daemon.dll
-c:\users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave._2CI.Daemon\bin\Debug\netcoreapp1.1\de.netcrave._2CI.Daemon.pdb
-c:\users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave._2CI.Daemon\bin\Debug\netcoreapp1.1\de.netcrave._2CI.Shared.dll
-c:\users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave._2CI.Daemon\bin\Debug\netcoreapp1.1\de.netcrave._2CI.Shared.pdb
-c:\users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave._2CI.Daemon\obj\Debug\netcoreapp1.1\de.netcrave._2CI.Daemon.csprojResolveAssemblyReference.cache
-c:\users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave._2CI.Daemon\obj\Debug\netcoreapp1.1\de.netcrave._2CI.Daemon.AssemblyInfo.cs
-c:\users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave._2CI.Daemon\obj\Debug\netcoreapp1.1\de.netcrave._2CI.Daemon.dll
-c:\users\paige\documents\visual studio 2017\Projects\de.netcrave._2CI\de.netcrave._2CI.Daemon\obj\Debug\netcoreapp1.1\de.netcrave._2CI.Daemon.pdb

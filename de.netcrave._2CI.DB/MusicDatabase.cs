@@ -6,84 +6,44 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Collections.Concurrent;
 using System.Reflection;
-
+using de.netcrave._2CI.Model;
 
 namespace de.netcrave._2CI.DB
 {
     public class MusicDatabase
     {
+        // note to self find dupes by similarity percentage and show in other window
         DBFragmentIndex FragmentIndex = new DBFragmentIndex();
         private static MusicDatabase instance = new MusicDatabase();
         public static MusicDatabase _ { get { return instance; } }
         private MusicDatabase() { }
 
-        /// <summary>
-        /// Asset files applicable to this program, names should correspond directly to field names in AssetFileMagic class
-        /// </summary>
-        public enum AssetFileType
-        {
-            MP3 = 1,
-            OGG = 2,
-            WMA = 3,
-            AAC = 4,
-            APE = 5,
-            FLAC = 6,
-            WAVRIFF = 7,
-            WAVWAVE = 8,
-            JPEGRAW = 9,
-            JPEGJFIF = 10,
-            JPEGEXIF = 11,
-            PNG = 12,
-            UNKNOWN = 13,
-
-        }
-
-        /// <summary>
-        /// magic signatures for relevant file types, field names should correspond directly to names in the AssetFileType enum
-        /// </summary>
-        class AssetFileMagic
-        {
-            private static AssetFileMagic instance = new AssetFileMagic();
-            private AssetFileMagic() { }
-            public static AssetFileMagic _ { get { return instance; } }
-            public readonly byte[] MP3 = new byte[] { 0xFF, 0xFB };
-            public readonly byte[] OGG = new byte[] { 0x4F, 0x67, 0x67, 0x53 };
-            public readonly byte[] WMA = new byte[] { 0x30, 0x26, 0xB2, 0x75, 0x8E, 0x66, 0xCF, 0x11, 0xA6, 0xD9, 0x00, 0xAA, 0x00, 0x62, 0xCE, 0x6C };
-            public readonly byte[] AAC = new byte[] { 0xFF, 0xF1 };
-            //public readonly byte[] APE = new byte[] { };
-            public readonly byte[] FLAC = new byte[] { 0x66, 0x4C, 0x61, 0x43 };
-            public readonly byte[] WAVRIFF = new byte[] { 0x52, 0x49, 0x46, 0x46 };
-            public readonly byte[] WAVWAVE = new byte[] { 0x57, 0x41, 0x56, 0x45 };
-            public readonly byte[] JPEGRAW = new byte[] { 0xFF, 0xD8, 0xFF, 0xDB };
-            public readonly byte[] JPEGJFIF = new byte[] { 0xFF, 0xD8, 0xFF, 0xE0 };
-            public readonly byte[] JPEGEXIF = new byte[] { 0xFF, 0xD8, 0xFF, 0xE1 };
-            public readonly byte[] PNG = new byte[] { 0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A };
-        }
+       
       
         /// <summary>
         /// Determines file type from file magic 
         /// </summary>
         /// <param name="filename"></param>
         /// <returns></returns>
-        public static AssetFileType GetFileType(string filename)
+        public static Assets.AssetFileType GetFileType(string filename)
         {
             using (FileStream fs = new FileStream(filename, FileMode.Open, FileAccess.Read))
             {
                 byte[] magic;
-                foreach (var f in AssetFileMagic._.GetType().GetFields().Where(w => w.FieldType == typeof(byte[])))
+                foreach (var f in Assets.AssetFileMagic._.GetType().GetFields().Where(w => w.FieldType == typeof(byte[])))
                 {
-                    var cur = (byte[])f.GetValue(AssetFileMagic._);
+                    var cur = (byte[])f.GetValue(Assets.AssetFileMagic._);
                     magic = new byte[cur.Length];
                     fs.Read(magic, 0, cur.Length);
 
                     if (cur.SequenceEqual(magic))
                     {
-                        return (AssetFileType)System.Enum.Parse(typeof(AssetFileType), f.Name);
+                        return (Assets.AssetFileType)System.Enum.Parse(typeof(Assets.AssetFileType), f.Name);
                     }
 
                     fs.Seek(0, SeekOrigin.Begin);
                 }
-                return AssetFileType.UNKNOWN;
+                return Assets.AssetFileType.UNKNOWN;
             }
         }
 
@@ -116,13 +76,13 @@ namespace de.netcrave._2CI.DB
                             var CurrentFileType = GetFileType(f);
                             switch (CurrentFileType)
                             {
-                                case AssetFileType.UNKNOWN:
+                                case Assets.AssetFileType.UNKNOWN:
                                     continue;                                    
                                 // Other Asset files
-                                case AssetFileType.JPEGRAW:
-                                case AssetFileType.JPEGEXIF:
-                                case AssetFileType.JPEGJFIF:
-                                case AssetFileType.PNG:
+                                case Assets.AssetFileType.JPEGRAW:
+                                case Assets.AssetFileType.JPEGEXIF:
+                                case Assets.AssetFileType.JPEGJFIF:
+                                case Assets.AssetFileType.PNG:
                                     if(fragment == null)
                                     {
                                         // Lets avoid commiting database fragments for files that aren't necesarrily associated with any music
@@ -134,13 +94,13 @@ namespace de.netcrave._2CI.DB
                                     fragment.AssociatedFiles.Add(new AssociatedImageFile(f, CurrentFileType, fragment));
                                     break;
                                 // Audio files
-                                case AssetFileType.AAC:                                    
-                                case AssetFileType.FLAC:                                    
-                                case AssetFileType.MP3:                                
-                                case AssetFileType.APE:
-                                case AssetFileType.WAVRIFF:
-                                case AssetFileType.WAVWAVE:
-                                case AssetFileType.WMA:                                
+                                case Assets.AssetFileType.AAC:                                    
+                                case Assets.AssetFileType.FLAC:                                    
+                                case Assets.AssetFileType.MP3:                                
+                                case Assets.AssetFileType.APE:
+                                case Assets.AssetFileType.WAVRIFF:
+                                case Assets.AssetFileType.WAVWAVE:
+                                case Assets.AssetFileType.WMA:                                
                                     //fragment = (fragment != null) ? fragment : new DBFragment(current);
                                     fragment.AudioFiles.Add(new AudioFile(f, CurrentFileType, fragment));
                                     foreach(var s in Pending)
