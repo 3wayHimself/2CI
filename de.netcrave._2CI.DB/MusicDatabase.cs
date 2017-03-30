@@ -13,7 +13,7 @@ namespace de.netcrave._2CI.DB
     public class MusicDatabase
     {
         // note to self find dupes by similarity percentage and show in other window
-        DBFragmentIndex FragmentIndex = new DBFragmentIndex();
+        public DBFragmentIndex FragmentIndex = new DBFragmentIndex();
         private static MusicDatabase instance = new MusicDatabase();
         public static MusicDatabase _ { get { return instance; } }
         private MusicDatabase() { }

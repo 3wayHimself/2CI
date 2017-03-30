@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace de.netcave._2CI.WindowsUI
+namespace de.netcrave._2CI.WindowsUI
 {
     static class Program
     {

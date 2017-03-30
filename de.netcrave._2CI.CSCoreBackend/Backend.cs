@@ -40,7 +40,7 @@ namespace de.netcrave._2CI.CSCoreBackend
         }
         public Backend()
         {
-            
+            _device = (AudioDevice)GetAudioDevices().Single();
         }
 
         public void Pause()

@@ -53,6 +53,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -61,7 +64,10 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\de.netcrave._2CI.DB.MusicDatabase.datasource" />
+    <None Include="Properties\DataSources\de.netcrave._2CI.Model.AudioFile.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -74,6 +80,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\de.netcrave._2CI.DB\de.netcrave._2CI.DB.csproj">
+      <Project>{65ca9556-a6b7-4f33-a475-c3cf43e41b0b}</Project>
+      <Name>de.netcrave._2CI.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\de.netcrave._2CI.Shared\de.netcrave._2CI.Model.csproj">
+      <Project>{634b3f17-7828-42fe-b6ce-a1dcead3c27c}</Project>
+      <Name>de.netcrave._2CI.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

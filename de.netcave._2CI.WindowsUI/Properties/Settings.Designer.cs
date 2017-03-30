@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace de.netcave._2CI.WindowsUI.Properties
+namespace de.netcrave._2CI.WindowsUI.Properties
 {
 
 
