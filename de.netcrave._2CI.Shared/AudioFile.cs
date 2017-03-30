@@ -18,13 +18,13 @@ namespace de.netcrave._2CI.Model
         private string _Title = "";
         private string _Artist = "";
         private string _Album = "";
-        private string _Year = "";
+        private uint _Year = 0;
         private string _Comment = "";
-        private int _Track = 0;
+        private uint _Track = 0;
         private string _Genre = "";
-        private int _Samplerate = 0;
-        private int _Channels = 0;
-        private int _Length = 0;
+        private uint _Samplerate = 0;
+        private uint _Channels = 0;
+        private uint _Length = 0;
         private Assets.AssetFileType _FileType = Assets.AssetFileType.UNKNOWN;
         private DBFragment _ParentDBFragment;
 
@@ -36,13 +36,13 @@ namespace de.netcrave._2CI.Model
         public string Title { get { return _Title; } set { _Title = value; } }
         public string Artist { get { return _Artist; } set { _Artist = value; } }
         public string Album { get { return _Album; } set { _Album = value; } }
-        public string Year { get { return _Year; } set { _Year = value; } }
+        public uint Year { get { return _Year; } set { _Year = value; } }
         public string Comment { get { return _Comment; } set { _Comment = value; } }
-        public int Track { get { return _Track; } set { _Track = value; } }
+        public uint Track { get { return _Track; } set { _Track = value; } }
         public string Genre { get { return _Genre; } set { _Genre = value; } }
-        public int Samplerate { get { return _Samplerate; } set { _Samplerate = value; } }
-        public int Channels { get { return _Channels; } set { _Channels = value; } }
-        public int Length { get { return _Length; } set { _Length = value; } }
+        public uint Samplerate { get { return _Samplerate; } set { _Samplerate = value; } }
+        public uint Channels { get { return _Channels; } set { _Channels = value; } }
+        public uint Length { get { return _Length; } set { _Length = value; } }
         public Assets.AssetFileType FileType { get { return _FileType; } set { _FileType = value; } }
         public DBFragment ParentDBFragment { get { return _ParentDBFragment; } set { _ParentDBFragment = value; } }
 
@@ -51,6 +51,8 @@ namespace de.netcrave._2CI.Model
             FileName = file;
             FileType = ft;
             ParentDBFragment = parent;
-        }          
+            //ParseAudioFileMetadata();
+
+        }
     }
 }
