@@ -1,1 +1,1 @@
-![alt tag](https://raw.githubusercontent.com/cloudkitsch/2CI/master/2CI/img.png)
+![alt tag](https://github.com/cloudkitsch/2CI/blob/master/2CI/2CI.png?raw=true)
